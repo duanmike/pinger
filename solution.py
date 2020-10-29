@@ -136,9 +136,10 @@ def ping(host, timeout=1):
         vars = [str(round(packet_min, 2)), str(round(packet_max, 2)), str(round(packet_avg, 2)), str(round(stdev_var, 2))]
     else:
         vars = ['0', '0.0', '0', '0.0']
-
+    
+    print(vars)
     return vars
 
 if __name__ == '__main__':
-    ping("google.co.il")
-    #ping("google.com")
+    #ping("google.co.il")
+    ping("74.6.231.21")
